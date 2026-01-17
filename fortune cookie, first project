@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cstdlib>
+
+int main() {
+  srand(time(NULL));
+  int fortune = std::rand() % 6;
+  int lucky_number1 = std::rand () % 50;
+  int lucky_number2 = std::rand () % 50;
+  int lucky_number3 = std::rand () % 50;
+  int lucky_number4 = std::rand () % 50;
+  int lucky_number5 = std::rand () % 50;
+if (fortune==0) {
+  std::cout << "Don't pursue happiness – create it.\n\nyour lucky numbers are " << lucky_number1 << " " << lucky_number2 << " " << lucky_number3 << " " << lucky_number4;
+}
+else if (fortune==1) {
+  std::cout << "All things are difficult before they are easy.\n\nyour lucky numbers are " << lucky_number1 << " " << lucky_number2 << " " << lucky_number3 << " " << lucky_number4;
+}
+else if (fortune==2) {
+  std::cout << "The early bird gets the worm, but the second mouse gets the cheese.\n\nyour lucky numbers are " << lucky_number1 << " " << lucky_number2 << " " << lucky_number3 << " " << lucky_number4;
+}
+else if (fortune==3) {
+  std::cout << "Someone in your life needs a letter from you.\n\nyour lucky numbers are " << lucky_number1 << " " << lucky_number2 << " " << lucky_number3 << " " << lucky_number4;
+}
+else if (fortune==4) {
+  std::cout << "The fortune you search for is in another cookie.\n\nyour lucky numbers are " << lucky_number1 << " " << lucky_number2 << " " << lucky_number3 << " " << lucky_number4;
+}
+else if (fortune==5) {
+  std::cout << "Help! I'm being held prisoner in a Chinese bakery!\n\nyour lucky numbers are " << lucky_number1 << " " << lucky_number2 << " " << lucky_number3 << " " << lucky_number4;
+}
+}
