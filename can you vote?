@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main() {
+int age;
+bool citizen;
+bool registered;
+std::cout << "what is your age ";
+std::cin >> age;
+std::cout << "are you a citizen? Y/N = 1/0 ";
+std::cin >> citizen;
+std::cout << "are you registered? Y/N = 1/0 ";
+std::cin >> registered;
+if (age>18 && citizen==true && registered==true) {
+  std::cout << "you can vote";
+}
+else {
+  std::cout << "you can't vote, sadge.";
+}
+}
