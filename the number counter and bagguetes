@@ -1,0 +1,48 @@
+
+
+#include <iostream>
+
+int a;
+int b;
+long bagguetenum;
+bool bagguete_world = 0;
+int bigger (int a,int b) {
+    if (a>b) {
+        return a;
+    }
+    else {
+        return b;
+    }
+}
+void randomloop (long bagguetenum) {
+    for (int i=1; i<10; i++) {
+        bagguetenum*=i;
+        std::cout<< bagguetenum << " ";
+    }
+    if (bagguetenum > 1000) {
+        std::cout << "wow thats a lotta bagguetes!";
+        switch (bagguete_world) {
+            case true: std::cout << "\nthe world has become baggueteworld"; break;
+            case false: std::cout << "\nBUT Need...more...bagguetes..."; break;
+        }
+    }
+}
+
+int main () {
+    while (a!=100){
+        std::cout << "\nput in two numbers to see which is bigger.\n";
+        std::cout << "enter number A ";
+        std::cin >> a;
+        if (a==100){
+            break;}
+        std::cout << "enter number B ";
+        std::cin >>b;
+        int win = bigger(a, b);
+        std::cout << "the bigger number is " << win;
+        std::cout << "\nheres a random thing, choose a number of bagguetes ";
+        std::cin >> bagguetenum;
+        randomloop(bagguetenum);
+       
+        
+    }
+}
